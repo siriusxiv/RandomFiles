@@ -99,7 +99,7 @@ end
 
 for i=0,159 do
     print('\n\nGenerating frame ' .. frameToString(i) .. '\n')
-local instSPHLoader1 = LoadSPH({filepath='/home/malik/workspace/riken/dicom/tiff_heart/HEARTT001.sph'})
+local instSPHLoader1 = LoadSPH({filepath='HEARTT001.sph'})
 local instUniformFloat7 = UniformFloat({name='depth', val=instSPHLoader1:Depth()})
 local instUniformFloat6 = UniformFloat({name='height', val=instSPHLoader1:Height()})
 local instUniformFloat5 = UniformFloat({name='width', val=instSPHLoader1:Width()})
